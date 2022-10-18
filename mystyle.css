@@ -1,0 +1,437 @@
+body {
+    text-align: center;
+    height: 100%;
+    margin: 0 auto;
+    
+    
+    
+    
+}
+
+
+
+
+a.nav-link{
+    font-size: medium; 
+    color: dimgray; 
+    font-weight: bold;
+    font-family: 'Sen', sans-serif;
+
+}
+
+a.nav-link:hover{
+  background-color:transparent;
+  transition: 0.25s ease-in-out;
+  border-bottom-left-radius: 5px solid black;
+  color: black;
+  cursor: pointer;
+}
+
+.nav-link input[type=text] {
+    width: 175px;
+    border:none;
+    border-bottom: 1px solid black;
+    padding: 5px 10px;
+    outline: none;
+
+}
+
+
+
+
+.grid-container img{
+    max-width:100%;
+   
+}
+.grid-container{
+    width:100%;
+    height: 100%;
+    display: grid;
+    gap: 1.7em;
+    position: relative;
+    color:white;
+    margin-top: 50px;
+    margin-bottom: 0;
+    margin-left:25px;
+    grid-template-areas:
+    "grid-item1 grid-item1 grid-item2 grid-item4"
+    "grid-item1 grid-item1 grid-item3 grid-item4";
+
+    grid-template-rows: 195px 195px;
+    grid-template-columns: 260.5px 260.5px 255px 245px;  
+    overflow:hidden;
+}
+
+@media screen and (max-width: 810px) {
+    .grid-container{
+        height: 100vh;
+        margin-top:50px;
+        margin-left:120px;
+        gap: 1.7em;
+        grid-template-areas:
+        "grid-item1 grid-item1"
+        "grid-item1 grid-item1"
+        "grid-item2 grid-item4"
+        "grid-item3 grid-item4";
+
+        grid-template-columns: 260.5px 260.5px;
+        grid-template-rows: 195px;
+        overflow: hidden; 
+
+    }
+
+    
+}
+
+@media screen and (max-width: 428px) {
+    .grid-container{
+        height: 100%;
+        margin-top:50px;
+        margin-left:0;
+        grid-template-areas:
+        "grid-item1"
+        "grid-item1"
+        "grid-item2"
+        "grid-item3"
+        "grid-item4"
+        "grid-item4";
+
+        grid-template-columns: 375px;
+        grid-template-rows: 195px 195px 195px 195px 195px 195px;
+         
+
+    }
+
+    
+}
+
+
+
+.grid-item1{
+    background-image: url(image1.jpg);
+    background-size: cover;
+    grid-area:grid-item1;
+    
+    
+}
+
+.grid-item1:hover, .grid-item2:hover, .grid-item3:hover, .grid-item4:hover{
+  background-color: rgba(15, 38, 51, 0.8);
+  transition: 0.25s ease-in-out;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.grid-item2{
+    background-image: url(image2.jpg);
+    background-size: cover;
+    grid-area:grid-item2;
+    text-align: bottom;
+}
+
+.grid-item3{
+    background-image: url(image3.jpg);
+    background-size: cover;
+    grid-area:grid-item3;
+}
+
+.grid-item4{
+    background-image:url(image4.jpg);
+    background-size: cover;
+    grid-area:grid-item4;
+}
+
+.grid-item1 .img1text{
+    
+    position:absolute;
+    font-weight: bold;
+    place-self: center;
+    align-self:center;
+    justify-self: center;
+    display: grid;
+    padding: 130px 175px;
+    
+}
+
+.grid-item2 .img2text{
+    position: absolute;
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    place-self: center;
+    align-self:center;
+    justify-self: center;
+    display: grid;
+    padding: 150px 33px;
+
+}
+
+.grid-item3 .img3text{
+    position: absolute;
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    place-self: center;
+    align-self:center;
+    justify-self: center;
+    display: grid;
+    padding: 150px 5px;
+
+}
+
+.grid-item4 .img4text{
+    position: absolute;
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    place-self: center;
+    align-self:center;
+    justify-self: center;
+    display: grid;
+    padding: 360px 10px;
+
+}
+
+@media screen and (max-width: 810px){
+
+    .grid-item1 .img1text{
+    
+        position:absolute;
+        font-weight: bold;
+        place-self: center;
+        align-self:center;
+        justify-self: center;
+        display: grid;
+        padding: 175px 190px;
+        
+    }
+
+    .grid-item2 .img2text{
+        position: absolute;
+        font-family: 'Sen', sans-serif;
+        font-weight: bold;
+        place-self: center;
+        align-self:center;
+        justify-self: center;
+        display: grid;
+        padding: 225px 33px;
+    
+    }
+
+    .grid-item3 .img3text{
+        position: absolute;
+        font-family: 'Sen', sans-serif;
+        font-weight: bold;
+        place-self: center;
+        align-self:center;
+        justify-self: center;
+        display: grid;
+        padding: 220px 15px;
+    
+    }
+
+    .grid-item4 .img4text{
+        position: absolute;
+        font-family: 'Sen', sans-serif;
+        font-weight: bold;
+        place-self: center;
+        align-self:center;
+        justify-self: center;
+        display: grid;
+        padding: 515px 25px;
+    
+    }
+
+
+}
+
+@media screen and (max-width: 428px){
+
+    .grid-item1 .img1text{
+    
+        position:absolute;
+        font-weight: bold;
+        place-self: center;
+        align-self:center;
+        justify-self: center;
+        display: grid;
+        padding: 165px 110px;
+        
+    }
+
+    .grid-item2 .img2text{
+        position: absolute;
+        font-family: 'Sen', sans-serif;
+        font-weight: bold;
+        place-self: center;
+        align-self:center;
+        justify-self: center;
+        display: grid;
+        padding: 160px 100px;
+    
+    }
+
+    .grid-item3 .img3text{
+        position: absolute;
+        font-family: 'Sen', sans-serif;
+        font-weight: bold;
+        place-self: center;
+        align-self:center;
+        justify-self: center;
+        display: grid;
+        padding: 160px 75px;
+    
+    }
+
+    .grid-item4 .img4text{
+        position: absolute;
+        font-family: 'Sen', sans-serif;
+        font-weight: bold;
+        place-self: center;
+        align-self:center;
+        justify-self: center;
+        display: grid;
+        padding: 375px 85px;
+    
+    }
+
+}
+
+.flex-container{
+    display:flex;
+    position:absolute;
+    flex-direction:row;
+    height: 444px;
+    width:100%;
+    object-fit: contain;
+    margin-left: 25px;
+    padding-top: 20px;
+    
+}
+
+.flex-container img{
+    max-width:100%;
+    height: 444px;
+}
+
+.flex-cta{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    height:444px;
+}
+
+@media screen and (max-width: 810px){
+    .flex-container{
+        flex-direction:column;
+        display:flex;
+        object-fit: contain;
+        position: relative;
+        margin-left: 120px;
+        height: 444px;
+        width: 550px;
+        
+    }
+
+    .flex-container img{
+        max-width:100%;
+        height: auto;
+    }
+    
+    .flex-cta{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        height:auto;
+    }
+    
+}
+
+@media screen and (max-width: 428px){
+    .flex-container{
+        flex-direction:column;
+        display:flex;
+        object-fit: contain;
+        position: relative;
+        margin: 0;
+        height: 400px;
+        width: 375px;
+        
+    }
+
+    .flex-container img{
+        max-width:100%;
+        height: auto;
+    }
+    
+    .flex-cta{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        height:auto;
+    }
+    
+}
+
+button {
+    background-color:tan;
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+button:hover{
+  background-color: rgba(15, 38, 51, 0.8);
+  transition: 0.25s ease-in-out;
+  border: 1px solid black;
+  cursor: pointer;
+
+}
+
+.buttonfooter button{
+    background-color:tan;
+    border: none;
+    color: white;
+    padding: 8px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+@media screen and (max-width: 810px){
+    .buttonfooter button{
+        align-self: auto;
+        margin-top: 10px;
+    }
+}
+
+.buttonfooter button:hover{
+    background-color: rgba(15, 38, 51, 0.8);
+    transition: 0.25s ease-in-out;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 810px){
+    .flex-icons{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}
+
