@@ -374,6 +374,7 @@ button {
     background-color:tan;
     border: none;
     color: white;
+    border-radius: 4px;
     padding: 8px 32px;
     text-align: center;
     text-decoration: none;
@@ -395,11 +396,11 @@ button:hover{
 
 }
 
-.buttonfooter button{
+footer button{
     background-color:tan;
     border: none;
     color: white;
-    padding: 8px 28px;
+    padding: 8px 24px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -413,13 +414,13 @@ button:hover{
 }
 
 @media screen and (max-width: 810px){
-    .buttonfooter button{
+    footer button{
         align-self: auto;
         margin-top: 10px;
     }
 }
 
-.buttonfooter button:hover{
+footer button:hover{
     background-color: rgba(15, 38, 51, 0.8);
     transition: 0.25s ease-in-out;
     border: 1px solid black;
@@ -434,4 +435,17 @@ button:hover{
         margin-bottom: 5px;
     }
 }
-
+ .col-sm li{
+    display: inline-block;
+ }
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
